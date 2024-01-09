@@ -1,0 +1,17 @@
+%% vim: ft=erlang ts=4 sw=4 et sts=4
+{application, boxer, [
+ {description, "A library to format and print customizable boxes around messages"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache-2.0"]},
+  {links,[
+    {"GitHub", "https://github.com/choptastic/boxer"}
+  ]}
+]}.
