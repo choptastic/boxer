@@ -2,6 +2,8 @@
 
 Wraps a terminal message in boxes.
 
+[![sample image](https://github.com/choptastic/boxer/raw/main/priv/boxer-msg.png)]
+
 ## Add to rebar.config
 
 ```erlang
