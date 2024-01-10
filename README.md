@@ -19,11 +19,12 @@ Wraps a terminal message in boxes.
 ### Printing and Formatting
 
 * `boxer:print(Msg)`: Prints a message with the default box style (single-line)
-* `boxer:print(Msg, LineDef)`: Prints a message with the specified `LineDef`
-  (by default, supported are the atoms `single`, `double`, and `hash`).
+* `boxer:print(Msg, LineDefName)`: Prints a message with the specified
+  `LineDefName` (by default, supported are the atoms `single`, `double`, and
+  `hash`).
 * `boxer:wrap(Msg)`: Returns a unicode string list wrapped in the default box
   style (`single-line`).
-* `boxer:wrap(Msg, LineDef)`: Returns a unicode string list wrapped in the
+* `boxer:wrap(Msg, LineDefName)`: Returns a unicode string list wrapped in the
   specified `LineDef`.
 
 ## Customization
