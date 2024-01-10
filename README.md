@@ -7,8 +7,8 @@ Wraps a terminal message in boxes.
 ```erlang
 
 {deps, [
-	...,
-	boxer %% <- add this right here
+    ...,
+    boxer %% <- add this right here
 ]}.
 ```
 
@@ -37,12 +37,12 @@ A Line Definition (Box Style) consists of the following information:
 
 ```erlang
 #{
-	chars =>
-		[Horiz, Vert, TopLeft, TopRight, BottomRight, BottomLeft],
-	h_padding =>
-		HorizontalPadding,
-	v_padding =>
-		VerticalPadding
+    chars =>
+        [Horiz, Vert, TopLeft, TopRight, BottomRight, BottomLeft],
+    h_padding =>
+        HorizontalPadding,
+    v_padding =>
+        VerticalPadding
 }
 ```
 
@@ -50,9 +50,9 @@ For example, the `single` line definition looks like this:
 
 ```erlang
 #{
-	chars => "─│┌┐┘└",
-	h_padding => 0,
-	v_padding => 0
+    chars => "─│┌┐┘└",
+    h_padding => 0,
+    v_padding => 0
 }
 ```
 
@@ -72,11 +72,11 @@ To add the above dot example via config, add the following to your `app.config`:
 ```erlang
 
 [
-	{boxer, [
-		{boxer_line_defs, [
-			{dots, #{chars=>"......", h_padding=>1}}
-		]}
-	]}
+    {boxer, [
+        {boxer_line_defs, [
+            {dots, #{chars=>"......", h_padding=>1}}
+        ]}
+    ]}
 ].
 ```
 
