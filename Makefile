@@ -5,3 +5,6 @@ compile:
 
 shell:
 	rebar3 shell
+
+publish:
+	rebar3 hex publish
